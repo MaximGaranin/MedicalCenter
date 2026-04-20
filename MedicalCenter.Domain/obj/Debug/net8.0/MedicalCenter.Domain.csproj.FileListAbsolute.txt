@@ -9,3 +9,4 @@
 /home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Domain/obj/Debug/net8.0/refint/MedicalCenter.Domain.dll
 /home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Domain/obj/Debug/net8.0/MedicalCenter.Domain.pdb
 /home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Domain/obj/Debug/net8.0/ref/MedicalCenter.Domain.dll
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Domain/obj/Debug/net8.0/MedicalCenter.Domain.sourcelink.json

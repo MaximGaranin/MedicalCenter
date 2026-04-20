@@ -11,6 +11,7 @@ namespace MedicalCenter.Tests.Domain
         private static readonly Guid DoctorId  = Guid.NewGuid();
         private static readonly Guid PatientId = Guid.NewGuid();
 
+        // Ближайший понедельник для стабильных тестов
         private static DateTime NextMonday()
         {
             var date = DateTime.Today;
@@ -18,6 +19,8 @@ namespace MedicalCenter.Tests.Domain
                 date = date.AddDays(1);
             return date;
         }
+
+        // ─── Позитивные тесты ───────────────────────────────────────────
 
         [TestCase(8,  0,  Shift.Morning)]
         [TestCase(8,  30, Shift.Morning)]
@@ -56,6 +59,8 @@ namespace MedicalCenter.Tests.Domain
             Assert.That(a1.Id, Is.Not.EqualTo(a2.Id));
         }
 
+        // ─── Негативные тесты: выходные ─────────────────────────────────
+
         [Test]
         public void Create_Saturday_ThrowsException()
         {
@@ -78,6 +83,8 @@ namespace MedicalCenter.Tests.Domain
             Assert.That(ex.Message, Is.EqualTo("Приём ведётся только с понедельника по пятницу"));
         }
 
+        // ─── Негативные тесты: время не кратно 30 мин ──────────────────
+
         [TestCase(8,  15)]
         [TestCase(9,  10)]
         [TestCase(10, 45)]
@@ -91,8 +98,10 @@ namespace MedicalCenter.Tests.Domain
             Assert.That(ex.Message, Does.Contain("кратное 30 минутам"));
         }
 
+        // ─── Негативные тесты: вне диапазона смены ──────────────────────
+
         [TestCase(7,  30)]
-        [TestCase(14, 0)]
+        [TestCase(14, 0)]   // начало вечерней смены — для утреннего врача это ошибка
         [TestCase(20, 0)]
         public void Create_MorningShift_OutOfRange_ThrowsException(int hour, int minute)
         {
@@ -104,7 +113,7 @@ namespace MedicalCenter.Tests.Domain
             Assert.That(ex.Message, Does.Contain("утренней смены"));
         }
 
-        [TestCase(8,  0)]
+        [TestCase(8,  0)]   // начало утренней — для вечернего врача ошибка
         [TestCase(13, 30)]
         [TestCase(20, 0)]
         public void Create_EveningShift_OutOfRange_ThrowsException(int hour, int minute)

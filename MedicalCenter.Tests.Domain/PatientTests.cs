@@ -7,6 +7,8 @@ namespace MedicalCenter.Tests.Domain
     [TestFixture]
     public class PatientTests
     {
+        // ─── Позитивные тесты ───────────────────────────────────────────
+
         [Test]
         public void Create_ValidData_ReturnsPatient()
         {
@@ -27,21 +29,23 @@ namespace MedicalCenter.Tests.Domain
             var patient = Patient.Create(firstName, lastName, patronymic,
                 birthDate, "79001234567", "Адрес");
 
-            Assert.That(patient.FirstName,  Is.EqualTo(firstName));
-            Assert.That(patient.LastName,   Is.EqualTo(lastName));
-            Assert.That(patient.Patronymic, Is.EqualTo(patronymic));
-            Assert.That(patient.BirthDate,  Is.EqualTo(birthDate));
-            Assert.That(patient.Id,         Is.Not.EqualTo(Guid.Empty));
+            Assert.That(patient.FirstName,   Is.EqualTo(firstName));
+            Assert.That(patient.LastName,    Is.EqualTo(lastName));
+            Assert.That(patient.Patronymic,  Is.EqualTo(patronymic));
+            Assert.That(patient.BirthDate,   Is.EqualTo(birthDate));
+            Assert.That(patient.Id,          Is.Not.EqualTo(Guid.Empty));
         }
 
         [Test]
         public void Create_TwoPatients_HaveDifferentIds()
         {
-            var p1 = Patient.Create("Иван",  "Иванов",  "", new DateTime(1990, 1, 1), "", "");
+            var p1 = Patient.Create("Иван", "Иванов", "", new DateTime(1990, 1, 1), "", "");
             var p2 = Patient.Create("Мария", "Петрова", "", new DateTime(1992, 2, 2), "", "");
 
             Assert.That(p1.Id, Is.Not.EqualTo(p2.Id));
         }
+
+        // ─── Негативные тесты ───────────────────────────────────────────
 
         [TestCase("")]
         [TestCase("   ")]
@@ -73,7 +77,8 @@ namespace MedicalCenter.Tests.Domain
             var futureDate = DateTime.Today.AddDays(1);
 
             var ex = Assert.Throws<Exception>(() =>
-                Patient.Create("Иван", "Иванов", "", futureDate, "", ""));
+                Patient.Create("Иван", "Иванов", "",
+                    futureDate, "", ""));
 
             Assert.That(ex.Message, Is.EqualTo("Дата рождения не может быть в будущем"));
         }
@@ -82,7 +87,8 @@ namespace MedicalCenter.Tests.Domain
         public void Create_TodayBirthDate_DoesNotThrow()
         {
             Assert.DoesNotThrow(() =>
-                Patient.Create("Иван", "Иванов", "", DateTime.Today, "", ""));
+                Patient.Create("Иван", "Иванов", "",
+                    DateTime.Today, "", ""));
         }
     }
 }

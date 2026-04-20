@@ -21,6 +21,8 @@ namespace MedicalCenter.Tests.Application
             _service  = new PatientsService(_repoMock.Object);
         }
 
+        // ─── CreatePatient ───────────────────────────────────────────────
+
         [Test]
         public void CreatePatient_ValidData_CallsRepositoryAddOnce()
         {
@@ -53,6 +55,8 @@ namespace MedicalCenter.Tests.Application
             Assert.That(addedPatient.LastName,  Is.EqualTo("Иванов"));
         }
 
+        // ─── GetPatient ──────────────────────────────────────────────────
+
         [Test]
         public void GetPatient_ExistingId_ReturnsPatient()
         {
@@ -77,6 +81,8 @@ namespace MedicalCenter.Tests.Application
             Assert.That(ex.Message, Does.Contain(unknownId.ToString()));
         }
 
+        // ─── DeletePatient ───────────────────────────────────────────────
+
         [Test]
         public void DeletePatient_ExistingId_CallsRepositoryDeleteOnce()
         {
@@ -98,6 +104,8 @@ namespace MedicalCenter.Tests.Application
             Assert.Throws<Exception>(() => _service.DeletePatient(unknownId));
         }
 
+        // ─── GetAllPatients ──────────────────────────────────────────────
+
         [Test]
         public void GetAllPatients_ReturnsListFromRepository()
         {
@@ -113,6 +121,8 @@ namespace MedicalCenter.Tests.Application
             Assert.That(result.Count, Is.EqualTo(2));
             _repoMock.Verify(r => r.GetAll(), Times.Once);
         }
+
+        // ─── SearchByLastName ────────────────────────────────────────────
 
         [Test]
         public void SearchByLastName_CallsRepositoryWithCorrectLastName()

@@ -13,3 +13,4 @@
 /home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/obj/Debug/net8.0/refint/MedicalCenter.Application.dll
 /home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/obj/Debug/net8.0/MedicalCenter.Application.pdb
 /home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/obj/Debug/net8.0/ref/MedicalCenter.Application.dll
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/obj/Debug/net8.0/MedicalCenter.Application.sourcelink.json

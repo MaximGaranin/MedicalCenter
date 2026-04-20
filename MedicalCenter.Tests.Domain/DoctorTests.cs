@@ -7,6 +7,8 @@ namespace MedicalCenter.Tests.Domain
     [TestFixture]
     public class DoctorTests
     {
+        // ─── Позитивные тесты ───────────────────────────────────────────
+
         [Test]
         public void Create_ValidData_ReturnsDoctor()
         {
@@ -16,21 +18,23 @@ namespace MedicalCenter.Tests.Domain
             Assert.IsNotNull(doctor);
         }
 
-        [TestCase("Пётр",  "Смирнов", "Терапевт",  Shift.Morning)]
-        [TestCase("Анна",  "Козлова", "Хирург",    Shift.Evening)]
-        [TestCase("Олег",  "Новиков", "Кардиолог", Shift.Morning)]
+        [TestCase("Пётр",   "Смирнов",  "Терапевт",   Shift.Morning)]
+        [TestCase("Анна",   "Козлова",  "Хирург",     Shift.Evening)]
+        [TestCase("Олег",   "Новиков",  "Кардиолог",  Shift.Morning)]
         public void Create_ValidData_SetsPropertiesCorrectly(
             string firstName, string lastName, string specialization, Shift shift)
         {
             var doctor = Doctor.Create(firstName, lastName, "Отчество",
                 specialization, "79009999999", shift);
 
-            Assert.That(doctor.FirstName,      Is.EqualTo(firstName));
-            Assert.That(doctor.LastName,       Is.EqualTo(lastName));
-            Assert.That(doctor.Specialization, Is.EqualTo(specialization));
-            Assert.That(doctor.Shift,          Is.EqualTo(shift));
-            Assert.That(doctor.Id,             Is.Not.EqualTo(Guid.Empty));
+            Assert.That(doctor.FirstName,       Is.EqualTo(firstName));
+            Assert.That(doctor.LastName,        Is.EqualTo(lastName));
+            Assert.That(doctor.Specialization,  Is.EqualTo(specialization));
+            Assert.That(doctor.Shift,           Is.EqualTo(shift));
+            Assert.That(doctor.Id,              Is.Not.EqualTo(Guid.Empty));
         }
+
+        // ─── Негативные тесты ───────────────────────────────────────────
 
         [TestCase("")]
         [TestCase("   ")]

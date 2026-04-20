@@ -23,14 +23,16 @@ namespace MedicalCenter.Tests.Application
         private Doctor  _doctor;
         private Patient _patient;
 
+        // Ближайший понедельник 10:00 (утренняя смена, кратно 30 мин)
+        private static DateTime ValidMorningTime =>
+            NextMonday().Date.AddHours(10);
+
         private static DateTime NextMonday()
         {
             var d = DateTime.Today;
             while (d.DayOfWeek != DayOfWeek.Monday) d = d.AddDays(1);
             return d;
         }
-
-        private static DateTime ValidMorningTime => NextMonday().Date.AddHours(10);
 
         [SetUp]
         public void SetUp()
@@ -50,6 +52,7 @@ namespace MedicalCenter.Tests.Application
             _doctorsRepoMock.Setup(r => r.GetById(_doctor.Id)).Returns(_doctor);
             _patientsRepoMock.Setup(r => r.GetById(_patient.Id)).Returns(_patient);
 
+            // По умолчанию — нет существующих записей
             _appointmentsRepoMock
                 .Setup(r => r.GetByDoctorId(_doctor.Id))
                 .Returns(new List<Appointment>());
@@ -57,6 +60,8 @@ namespace MedicalCenter.Tests.Application
                 .Setup(r => r.GetByPatientId(_patient.Id))
                 .Returns(new List<Appointment>());
         }
+
+        // ─── CreateAppointment: позитивные ───────────────────────────────
 
         [Test]
         public void CreateAppointment_ValidData_CallsAddOnce()
@@ -73,6 +78,8 @@ namespace MedicalCenter.Tests.Application
 
             Assert.That(id, Is.Not.EqualTo(Guid.Empty));
         }
+
+        // ─── CreateAppointment: врач/пациент не найдены ──────────────────
 
         [Test]
         public void CreateAppointment_DoctorNotFound_ThrowsException()
@@ -97,6 +104,8 @@ namespace MedicalCenter.Tests.Application
 
             Assert.That(ex.Message, Does.Contain(unknownPatientId.ToString()));
         }
+
+        // ─── CreateAppointment: конфликты ────────────────────────────────
 
         [Test]
         public void CreateAppointment_DoctorAlreadyBusy_ThrowsException()
@@ -131,6 +140,8 @@ namespace MedicalCenter.Tests.Application
             Assert.That(ex.Message, Does.Contain("уже записан"));
         }
 
+        // ─── DeleteAppointment ───────────────────────────────────────────
+
         [Test]
         public void DeleteAppointment_ExistingId_CallsDeleteOnce()
         {
@@ -151,6 +162,8 @@ namespace MedicalCenter.Tests.Application
 
             Assert.Throws<Exception>(() => _service.DeleteAppointment(unknownId));
         }
+
+        // ─── GetAllByDoctor / GetAllByPatient ────────────────────────────
 
         [Test]
         public void GetAllByDoctor_CallsRepositoryWithCorrectDoctorId()
