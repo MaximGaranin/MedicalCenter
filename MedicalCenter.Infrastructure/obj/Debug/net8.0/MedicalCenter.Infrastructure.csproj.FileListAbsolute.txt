@@ -1,0 +1,17 @@
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Infrastructure/bin/Debug/net8.0/MedicalCenter.Infrastructure.deps.json
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Infrastructure/bin/Debug/net8.0/MedicalCenter.Infrastructure.dll
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Infrastructure/bin/Debug/net8.0/MedicalCenter.Infrastructure.pdb
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Infrastructure/bin/Debug/net8.0/MedicalCenter.Application.dll
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Infrastructure/bin/Debug/net8.0/MedicalCenter.Domain.dll
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Infrastructure/bin/Debug/net8.0/MedicalCenter.Domain.pdb
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Infrastructure/bin/Debug/net8.0/MedicalCenter.Application.pdb
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Infrastructure/obj/Debug/net8.0/MedicalCenter.Infrastructure.csproj.AssemblyReference.cache
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Infrastructure/obj/Debug/net8.0/MedicalCenter.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Infrastructure/obj/Debug/net8.0/MedicalCenter.Infrastructure.AssemblyInfoInputs.cache
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Infrastructure/obj/Debug/net8.0/MedicalCenter.Infrastructure.AssemblyInfo.cs
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Infrastructure/obj/Debug/net8.0/MedicalCenter.Infrastructure.csproj.CoreCompileInputs.cache
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Infrastructure/obj/Debug/net8.0/MedicalCenter.Infrastructure.csproj.CopyComplete
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Infrastructure/obj/Debug/net8.0/MedicalCenter.Infrastructure.dll
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Infrastructure/obj/Debug/net8.0/refint/MedicalCenter.Infrastructure.dll
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Infrastructure/obj/Debug/net8.0/MedicalCenter.Infrastructure.pdb
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Infrastructure/obj/Debug/net8.0/ref/MedicalCenter.Infrastructure.dll

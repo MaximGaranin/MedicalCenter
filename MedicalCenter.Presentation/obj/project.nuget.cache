@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "MUCSc2/xjg6CZxg/6hCpjwXFVlW78ge9DjZdjR7lBCa7jHLERAm5eArS+2jSW4Cgpnw8lA2FSXtCOUwuKq8AvA==",
+  "success": true,
+  "projectFilePath": "/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Presentation/MedicalCenter.Presentation.csproj",
+  "expectedPackageFiles": [
+    "/home/w1ntry/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/home/w1ntry/.nuget/packages/microsoft.openapi/1.6.14/microsoft.openapi.1.6.14.nupkg.sha512",
+    "/home/w1ntry/.nuget/packages/swashbuckle.aspnetcore/6.6.2/swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
+    "/home/w1ntry/.nuget/packages/swashbuckle.aspnetcore.swagger/6.6.2/swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
+    "/home/w1ntry/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.6.2/swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
+    "/home/w1ntry/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.6.2/swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512"
+  ],
+  "logs": []
+}

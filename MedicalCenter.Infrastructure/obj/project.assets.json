@@ -1,0 +1,111 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "MedicalCenter.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "MedicalCenter.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MedicalCenter.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MedicalCenter.Application.dll": {}
+        }
+      },
+      "MedicalCenter.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MedicalCenter.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MedicalCenter.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MedicalCenter.Application/1.0.0": {
+      "type": "project",
+      "path": "../MedicalCenter.Application/MedicalCenter.Application.csproj",
+      "msbuildProject": "../MedicalCenter.Application/MedicalCenter.Application.csproj"
+    },
+    "MedicalCenter.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MedicalCenter.Domain/MedicalCenter.Domain.csproj",
+      "msbuildProject": "../MedicalCenter.Domain/MedicalCenter.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "MedicalCenter.Application >= 1.0.0",
+      "MedicalCenter.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/w1ntry/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Infrastructure/MedicalCenter.Infrastructure.csproj",
+      "projectName": "MedicalCenter.Infrastructure",
+      "projectPath": "/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Infrastructure/MedicalCenter.Infrastructure.csproj",
+      "packagesPath": "/home/w1ntry/.nuget/packages/",
+      "outputPath": "/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Infrastructure/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/w1ntry/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/MedicalCenter.Application.csproj": {
+              "projectPath": "/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/MedicalCenter.Application.csproj"
+            },
+            "/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Domain/MedicalCenter.Domain.csproj": {
+              "projectPath": "/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Domain/MedicalCenter.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.122/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

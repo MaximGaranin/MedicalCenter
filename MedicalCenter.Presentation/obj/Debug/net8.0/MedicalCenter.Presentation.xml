@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MedicalCenter.Presentation</name>
+    </assembly>
+    <members>
+        <member name="M:MedicalCenter.Presentation.Controllers.AppointmentsController.Create(MedicalCenter.Presentation.Contracts.CreateAppointmentRequest)">
+            <summary>Записать пациента к врачу</summary>
+        </member>
+        <member name="M:MedicalCenter.Presentation.Controllers.AppointmentsController.Delete(System.Guid)">
+            <summary>Удалить запись</summary>
+        </member>
+        <member name="M:MedicalCenter.Presentation.Controllers.AppointmentsController.GetDoctorWeek(System.Guid,System.DateTime)">
+            <summary>Расписание врача на неделю (передать дату понедельника)</summary>
+        </member>
+        <member name="M:MedicalCenter.Presentation.Controllers.AppointmentsController.GetDoctorToday(System.Guid)">
+            <summary>Записи врача на сегодня</summary>
+        </member>
+        <member name="M:MedicalCenter.Presentation.Controllers.AppointmentsController.GetPatientToday(System.Guid)">
+            <summary>Записи пациента на сегодня</summary>
+        </member>
+        <member name="M:MedicalCenter.Presentation.Controllers.AppointmentsController.GetAllByDoctor(System.Guid)">
+            <summary>Все записи врача</summary>
+        </member>
+        <member name="M:MedicalCenter.Presentation.Controllers.AppointmentsController.GetAllByPatient(System.Guid)">
+            <summary>Все записи пациента</summary>
+        </member>
+        <member name="M:MedicalCenter.Presentation.Controllers.DoctorsController.GetAll">
+            <summary>Получить всех врачей</summary>
+        </member>
+        <member name="M:MedicalCenter.Presentation.Controllers.DoctorsController.GetById(System.Guid)">
+            <summary>Получить врача по Id</summary>
+        </member>
+        <member name="M:MedicalCenter.Presentation.Controllers.DoctorsController.SearchByLastName(System.String)">
+            <summary>Поиск врачей по фамилии</summary>
+        </member>
+        <member name="M:MedicalCenter.Presentation.Controllers.DoctorsController.Create(MedicalCenter.Presentation.Contracts.CreateDoctorRequest)">
+            <summary>Добавить врача</summary>
+        </member>
+        <member name="M:MedicalCenter.Presentation.Controllers.DoctorsController.Delete(System.Guid)">
+            <summary>Удалить врача</summary>
+        </member>
+        <member name="M:MedicalCenter.Presentation.Controllers.PatientsController.GetAll">
+            <summary>Получить всех пациентов</summary>
+        </member>
+        <member name="M:MedicalCenter.Presentation.Controllers.PatientsController.GetById(System.Guid)">
+            <summary>Получить пациента по Id</summary>
+        </member>
+        <member name="M:MedicalCenter.Presentation.Controllers.PatientsController.SearchByLastName(System.String)">
+            <summary>Поиск пациентов по фамилии</summary>
+        </member>
+        <member name="M:MedicalCenter.Presentation.Controllers.PatientsController.Create(MedicalCenter.Presentation.Contracts.CreatePatientRequest)">
+            <summary>Добавить пациента</summary>
+        </member>
+        <member name="M:MedicalCenter.Presentation.Controllers.PatientsController.Delete(System.Guid)">
+            <summary>Удалить пациента</summary>
+        </member>
+    </members>
+</doc>

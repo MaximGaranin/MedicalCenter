@@ -1,0 +1,15 @@
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/bin/Debug/net8.0/MedicalCenter.Application.deps.json
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/bin/Debug/net8.0/MedicalCenter.Application.dll
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/bin/Debug/net8.0/MedicalCenter.Application.pdb
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/bin/Debug/net8.0/MedicalCenter.Domain.dll
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/bin/Debug/net8.0/MedicalCenter.Domain.pdb
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/obj/Debug/net8.0/MedicalCenter.Application.csproj.AssemblyReference.cache
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/obj/Debug/net8.0/MedicalCenter.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/obj/Debug/net8.0/MedicalCenter.Application.AssemblyInfoInputs.cache
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/obj/Debug/net8.0/MedicalCenter.Application.AssemblyInfo.cs
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/obj/Debug/net8.0/MedicalCenter.Application.csproj.CoreCompileInputs.cache
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/obj/Debug/net8.0/MedicalCenter.Application.csproj.CopyComplete
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/obj/Debug/net8.0/MedicalCenter.Application.dll
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/obj/Debug/net8.0/refint/MedicalCenter.Application.dll
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/obj/Debug/net8.0/MedicalCenter.Application.pdb
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Application/obj/Debug/net8.0/ref/MedicalCenter.Application.dll

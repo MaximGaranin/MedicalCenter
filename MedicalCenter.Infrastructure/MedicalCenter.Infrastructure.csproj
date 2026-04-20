@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MedicalCenter.Domain\MedicalCenter.Domain.csproj" />
+    <ProjectReference Include="..\MedicalCenter.Application\MedicalCenter.Application.csproj" />
+  </ItemGroup>
+</Project>

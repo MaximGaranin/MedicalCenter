@@ -1,0 +1,11 @@
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Domain/bin/Debug/net8.0/MedicalCenter.Domain.deps.json
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Domain/bin/Debug/net8.0/MedicalCenter.Domain.dll
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Domain/bin/Debug/net8.0/MedicalCenter.Domain.pdb
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Domain/obj/Debug/net8.0/MedicalCenter.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Domain/obj/Debug/net8.0/MedicalCenter.Domain.AssemblyInfoInputs.cache
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Domain/obj/Debug/net8.0/MedicalCenter.Domain.AssemblyInfo.cs
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Domain/obj/Debug/net8.0/MedicalCenter.Domain.csproj.CoreCompileInputs.cache
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Domain/obj/Debug/net8.0/MedicalCenter.Domain.dll
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Domain/obj/Debug/net8.0/refint/MedicalCenter.Domain.dll
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Domain/obj/Debug/net8.0/MedicalCenter.Domain.pdb
+/home/w1ntry/C#/semestr2/MedicalCenter/src/MedicalCenter.Domain/obj/Debug/net8.0/ref/MedicalCenter.Domain.dll
