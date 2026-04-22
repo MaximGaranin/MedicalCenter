@@ -1,5 +1,8 @@
+using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Threading;
+using System.Threading.Tasks;
 using MedicalCenter.Application.Interfaces;
 
 namespace MedicalCenter.Infrastructure.Serialization;
@@ -19,14 +22,14 @@ public sealed class JsonSerializationService : ISerializationService
 
     public string Serialize<T>(T obj)
     {
-        ArgumentNullException.ThrowIfNull(obj);
+        if (obj is null) throw new System.ArgumentNullException(nameof(obj));
         return JsonSerializer.Serialize(obj, DefaultOptions);
     }
 
     public T? Deserialize<T>(string json)
     {
         if (string.IsNullOrWhiteSpace(json))
-            throw new ArgumentException("JSON-строка не может быть пустой.", nameof(json));
+            throw new System.ArgumentException("JSON-строка не может быть пустой.", nameof(json));
 
         return JsonSerializer.Deserialize<T>(json, DefaultOptions);
     }
@@ -36,8 +39,8 @@ public sealed class JsonSerializationService : ISerializationService
         string filePath,
         CancellationToken cancellationToken = default)
     {
-        ArgumentNullException.ThrowIfNull(obj);
-        ArgumentException.ThrowIfNullOrWhiteSpace(filePath);
+        if (obj is null) throw new System.ArgumentNullException(nameof(obj));
+        if (string.IsNullOrWhiteSpace(filePath)) throw new System.ArgumentException("filePath не может быть пустым.", nameof(filePath));
 
         var directory = Path.GetDirectoryName(filePath);
         if (!string.IsNullOrEmpty(directory))
@@ -51,7 +54,7 @@ public sealed class JsonSerializationService : ISerializationService
         string filePath,
         CancellationToken cancellationToken = default)
     {
-        ArgumentException.ThrowIfNullOrWhiteSpace(filePath);
+        if (string.IsNullOrWhiteSpace(filePath)) throw new System.ArgumentException("filePath не может быть пустым.", nameof(filePath));
 
         if (!File.Exists(filePath))
             throw new FileNotFoundException($"Файл не найден: {filePath}", filePath);
